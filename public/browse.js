@@ -73,5 +73,16 @@ const statesOfIndia = [
     document.getElementById('residenceStateFilter').addEventListener('change', fetchAndRender);
   
     fetchAndRender();
-  };
-  
+};
+
+async function fetchAndRender() {
+  const res = await fetch('/data');
+  const data = await res.json();
+
+  const filteredData = applyFilters(data);
+  renderTable(filteredData);
+
+  // ✅ Hide loading overlay here, after rendering
+  document.getElementById('loadingOverlay').style.display = 'none';
+  document.getElementById('mainContent').style.display = 'block';
+}
