@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Browse Submissions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Submit Info</a>
+        <a href="/browse.html">Browse Entries</a>
+      </nav>      
+  <h1>All Submissions</h1>
+
+  <div>
+    <input type="text" id="nameFilter" placeholder="Filter by Name" />
+    <select id="birthStateFilter">
+      <option value="">Birth State (All)</option>
+    </select>
+    <select id="residenceStateFilter">
+      <option value="">Residence State (All)</option>
+    </select>
+  </div>
+
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Birth State</th>
+        <th>Residence</th>
+      </tr>
+    </thead>
+    <tbody id="dataBody">
+      <!-- Entries will go here -->
+    </tbody>
+  </table>
+
+  <script src="browse.js"></script>
+</body>
+</html>

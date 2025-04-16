@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Submit Info</a>
+        <a href="/browse.html">Browse Entries</a>
+      </nav>      
+  <h1>Submit Your Info</h1>
+
+  <form id="infoForm">
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="number" name="age" placeholder="Age" required />
+
+    <label for="birthState">Place of Birth (India):</label>
+    <select name="birthState" required>
+        <option value="">-- Select Birth State --</option>
+      </select>
+      
+
+    <label>
+      <input type="checkbox" id="outsideIndia" />
+      I reside outside India
+    </label>
+
+    <div id="residenceFields">
+      <label for="residenceState">Place of Residence (India):</label>
+      <select name="residenceState">
+        <option value="">-- Select Residence State --</option>
+      </select>
+      
+    </div>
+
+    <div id="outsideAddress" style="display: none;">
+      <label for="foreignAddress">Exact Address (outside India):</label>
+      <input type="text" name="foreignAddress" placeholder="Address" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

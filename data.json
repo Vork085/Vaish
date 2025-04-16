@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Kaj",
+    "location": "del",
+    "skill": "axe"
+  },
+  {
+    "name": "axel",
+    "location": "karol",
+    "skill": "chop"
+  },
+  {
+    "name": "aka",
+    "age": "25",
+    "birthState": "Delhi",
+    "residenceState": "Goa",
+    "foreignAddress": null
+  },
+  {
+    "name": "aku",
+    "age": "21",
+    "birthState": "Andaman and Nicobar Islands",
+    "residenceState": null,
+    "foreignAddress": "Xxaanf.????"
+  },
+  {
+    "name": "sk",
+    "age": "21",
+    "birthState": "Gujarat",
+    "residenceState": null,
+    "foreignAddress": "dsd"
+  }
+]
